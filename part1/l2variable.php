@@ -14,10 +14,25 @@ echo `$job`; // back tip က ဘာမှ မပေါ်ဝူး
 
 echo "<br/>"; 
 
-echo "My name is    $fullname"; // result = My name is Zwe Aung Naing
+echo "My name is    $fullname."; // result = My name is Zwe Aung Naing
 echo "<br/>"; 
-echo "My name is $(fullname)"; // result = My name is Zwe Aung Naing
+echo "My name is ${fullname}."; // result = My name is Zwe Aung Naing
 echo "<br/>"; 
-echo 'My name is $(fullname)'; // result = My name is ${fullname}
+echo 'My name is $(fullname).'; // result = My name is ${fullname}
+echo "<br/>"; 
+echo "I am {$job}." ;// result = I am Developer
+
+echo "<hr/>";// result = I am Developer
+
+echo 'He\'s my father,he is a $job.';  // result = He's my father,he is a $job
+echo "<br/>"; 
+echo "He\'s my father,he is a \$job.";  // result = He's my father,he is a $job
+echo "<br/>"; 
+echo "He\'s my father,he is a \${job}.";  // result = He's my father,he is a ${job}
+echo "<br/>"; 
+echo "He\'s my father,he is a \{$job}.";  // result = He's my father,he is a \{developer}
+echo "<br/>"; 
+echo "He\'s my father,he is a {\$job}.";  // result = He's my father,he is a {$job}
+
 
 ?>
