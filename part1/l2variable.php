@@ -34,5 +34,21 @@ echo "He\'s my father,he is a \{$job}.";  // result = He's my father,he is a \{d
 echo "<br/>"; 
 echo "He\'s my father,he is a {\$job}.";  // result = He's my father,he is a {$job}
 
+echo "<hr/>"; 
 
+$gender = print 'female'; // result = female
+// $nation = echo 'burma'; // error 
+
+echo "<hr/>";
+
+// Concat
+$firstname = 'Aung';
+$lastname = 'Kyaw Kyaw';
+
+echo $firstname;
+echo $lastname;
+echo "<br/>";
+echo $firstname.$lastname; // စာတွေ ဆက်ချင်ရင် concat လုပ်ချင်ရင် . လေးနဲ့ဆက်ပေးရတယ် 
+echo "<br/>";
+echo $firstname.' '.$lastname;
 ?>
