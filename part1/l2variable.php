@@ -51,4 +51,13 @@ echo "<br/>";
 echo $firstname.$lastname; // စာတွေ ဆက်ချင်ရင် concat လုပ်ချင်ရင် . လေးနဲ့ဆက်ပေးရတယ် 
 echo "<br/>";
 echo $firstname.' '.$lastname;
+
+// Comments
+// Single Line Comments ( # ,// )
+// Muti Line Comments ( /* */)
+
+
+
 ?>
+
+<!-- 20IN -->
