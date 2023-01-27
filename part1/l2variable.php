@@ -61,3 +61,5 @@ echo $firstname.' '.$lastname;
 ?>
 
 <!-- 20IN -->
+
+<!-- php -S localhost:8000 -t foldername -->
