@@ -1,6 +1,10 @@
 <?php
 
 // Variables
+// variable scope
+// (i)Global Scope Variable
+// (ii)Local Scope Variable
+// (Iii)Static Scope Variable
 
 // variable ကြေညာရင် $ ကို သုံးရမယ်  
 $fullname = "Zwe Aung Naing";
