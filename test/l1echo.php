@@ -10,6 +10,19 @@ echo "Hello Myanamr ",'Hello Thailand<br/>';
 $developer = 'Zwe Aung Naing';
 echo "$developer";
 
+$num1 = 100;
+$num2 = 100;
+
+echo "<br/>";
+
+
+echo $num1 + $num2;
+echo "<br/>";
+var_dump ($num1 + $num2);
+echo "<br/>";
+var_dump ($num1 + $num2);
+
+
 
 
 
