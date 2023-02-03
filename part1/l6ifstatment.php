@@ -112,7 +112,17 @@ echo "<br/>";
 
 //  true       false     false
 
-if($a < $b || $b > $c && $a < $c){
+if($a < $b || $b > $c && $a > $c){
+    echo "It is true.";
+}else{
+    echo "It is false.";
+}
+
+echo "<br/>";
+
+//  true       false     false
+        // true            false    
+if(($a < $b || $b > $c) && $a > $c){
     echo "It is true.";
 }else{
     echo "It is false.";
@@ -120,13 +130,74 @@ if($a < $b || $b > $c && $a < $c){
 
 echo "<hr/>";
 
+//  မငယ်ဝူး မှန်လား မှားလား
 if(!($a < $b)){
     echo "It is true.";
 }else{
     echo "It is false.";
 }
 
+echo "<hr/>";
+
+// if elseif if
+
+if($b > $c){
+    echo "It is true.";
+}elseif($b === 200){
+    echo "It is equal.";
+}else{
+    echo "It is false.";
+}
+
+echo "<br/>";
+
+if($b > $c)echo "It is true.";elseif($b === 200) echo "It is Equal." ; else echo "It is false.";
+
+echo "<br/>";
+
+if($b > $c)
+    echo "It is Ture.";
+elseif($b === 200) 
+    echo "It is Equal.";
+else
+    echo "It is false.";
+    
+echo "<br/>";
+
+
+// ? Switch
+// switch(condition){
+//     case label1;
+//         code to be executed;
+//     break;
+//     case label2;
+//         code to be executed;
+//     break;
+//     ....
+//     default
+//     code to be executed;
+// }
+
+$phone = "";
+
+switch ($phone){
+    case "sony":
+        echo "i can't buy sony phone";
+    break;
+    case "iphone" :
+        echo "i hate apple product" ;
+    break;
+    case "mi" :
+        echo "Oki , i can buy";
+    break;
+    case $phone :
+        echo "My fav mobile product is $phone" ;
+    break;
+    default:
+        echo "i love keypad" ;
+}
 
 ?>
+
 
 <!-- 27IF -->
