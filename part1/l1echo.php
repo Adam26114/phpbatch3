@@ -17,6 +17,8 @@ echo ("Hello Serilanka <hr/>");
 echo "Hello Myanmar",'I love Myanamr';      // multi parameta ရပါတယ်
 // echo ("Hello Myanmar",'I love Myanamr'); //error multi parameta ရေးမယ်ဆိုရင် () ထဲထည့်မရေးရပါဝူး
 echo "<hr/>";
+
+// ? print
 print "Hello Philippine <hr/>";
 // print "Hello Philippine","Hello Thailand";
 print "Hello Thailand ";
@@ -36,6 +38,9 @@ echo false;   //resul = empty
 echo '<br/>';
 echo null;   //resul = empty
 echo '<br/>';
+//echo undenine;   //resul = does not know
+
+
 
 //Special Escape character (\)
 echo "He's my brother";

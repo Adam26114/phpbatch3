@@ -12,8 +12,8 @@ $job = "Developer";
 
 echo $fullname;
 echo $job;
-echo "$fullname"; // double code က ပေးလိုက်တဲ့  variable ဘာသာပြန်ပေးနိုင်တယ် 
-echo '$fullname'; // single code က ရေးတဲ့ အတိုင်း ဘဲ‌ပေါ်တယ်
+echo "$fullname"; // double quote က ပေးလိုက်တဲ့  variable ဘာသာပြန်ပေးနိုင်တယ် 
+echo '$fullname'; // single quote က ရေးတဲ့ အတိုင်း ဘဲ‌ပေါ်တယ်
 echo `$job`; // back tip က ဘာမှ မပေါ်ဝူး
 
 echo "<br/>"; 
@@ -28,15 +28,15 @@ echo "I am {$job}." ;// result = I am Developer
 
 echo "<hr/>";// result = I am Developer
 
-echo 'He\'s my father,he is a $job.';  // result = He's my father,he is a $job
+echo 'He\'s my father,he is a $job.';  // result = He's my father,he is a $job.
 echo "<br/>"; 
-echo "He\'s my father,he is a \$job.";  // result = He's my father,he is a $job
+echo "He\'s my father,he is a \$job.";  // result = He's my father,he is a $job.
 echo "<br/>"; 
-echo "He\'s my father,he is a \${job}.";  // result = He's my father,he is a ${job}
+echo "He\'s my father,he is a \${job}.";  // result = He's my father,he is a ${job}.
 echo "<br/>"; 
-echo "He\'s my father,he is a \{$job}.";  // result = He's my father,he is a \{developer}
+echo "He\'s my father,he is a \{$job}.";  // result = He's my father,he is a \{developer}.
 echo "<br/>"; 
-echo "He\'s my father,he is a {\$job}.";  // result = He's my father,he is a {$job}
+echo "He\'s my father,he is a {\$job}.";  // result = He's my father,he is a {$job}.
 
 echo "<hr/>"; 
 
