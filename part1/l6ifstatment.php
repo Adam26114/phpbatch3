@@ -178,7 +178,8 @@ echo "<br/>";
 //     code to be executed;
 // }
 
-$phone = "";
+$phone = "samsung";
+
 
 switch ($phone){
     case "sony":
