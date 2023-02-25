@@ -51,6 +51,28 @@ echo "<br/>";
 // 	inc or dec
 // }
 
+// -------------------------------------
+
+// do ..while loop
+
+// start
+
+// do{
+// 	code to be executed;
+// 	inn or dec
+// }while(condition is true);
+
+
+
+$x = 1;
+
+while($x <= 5){
+	echo "this number is = $x <br/>";
+	$x++;
+}
+
+echo "<hr/>";
+
 
 
 // -------------------------------------
@@ -103,6 +125,18 @@ echo "<hr/>";
 
 // -----------------------------------------------------------------------------------------------------------------
 
+
+$y = 0 ;
+
+do{
+	echo "this is index array by dowhile = index key is ".$coloroneskey[$y]." and value is ".$colorones[$y].". <br/>";
+	$y++;
+}while($y < count($colorones));
+
+
+echo "<hr/>";
+
+
 $posts = [
 	"postone"=>"this is news post one",
 	"posttwo"=>"this is news post two",
@@ -110,14 +144,14 @@ $posts = [
 	"postfour"=>"this is news post four"
 ]; //Associate array
 
-$postskey = array_keys($posts);
-// var_dump($postskey); 
+$postkeys = array_keys($posts);
+// var_dump($postkeys); 
 
 for($x = 0; $x < count($posts) ; $x++){
 	// echo $x;
 	// echo "<br/>";
 
-	echo "This is associated array by forloop = key is " . $postskey[$x] . " and value is" .$posts[$postskey[$x]]. "<br/>"; 
+	echo "This is associated array by forloop = key is " . $postkeys[$x] . " and value is" .$posts[$postkeys[$x]]. "<br/>"; 
 
 }
 
@@ -137,13 +171,15 @@ echo "<hr/>";
 
 $x = 0;
 while($x < count($posts)){
-	echo "This is associated array by while = key is " . $postskey[$x] . " and value is" .$posts[$postskey[$x]]. "<br/>";
+	echo "This is associated array by while = key is " . $postkeys[$x] . " and value is" .$posts[$postkeys[$x]]. "<br/>";
 	$x++;
 }
 
 echo "<hr/>";
 
 // -------------------------------------------------------------------------------------------------------------
+
+
 
 $employees = [
 	["name"=>"Aung Aung","gender"=>"Male"],
@@ -200,21 +236,69 @@ echo "<hr/>";
 $x = 0;
 $key = array_keys($employees);
 while($x < count($employees)){
-
-	// echo $x;
-
-	$newkey = array_keys($employees[$key[$x]]);
-
-	$y = 0;
-
-	while($y < count($newkey)){
-		echo "This is multidimensional array by while = key is ". $newkey[$y] . " value is ". $employees[$x][$newkey[$y]] . "<br/>";
-		$y++;
-	}
-
-	$x++;
-
-
+    
+    $newkey = array_keys($employees[$key[$x]]);
+    $y = 0;
+    while($y < count($newkey)){
+        echo "This is indexed array or menual array by while = index key is ".$newkey[$y]." and value is ".$employees[$x][$newkey[$y]]."<br/>";
+        $y++;
+    }
+    $x++;
 }
+
+echo "<hr/>";
+
+
+//---------------------------||-------------------
+
+//do...while loop 
+// start
+// do{
+//     code to be executed
+//     inc or dec
+// }while(condition it true);
+
+$x = 1;
+do{
+    echo "do while loop is $x";
+    $x++;
+}while($x <= 5);
+echo "<br/>";
+echo "<br/>";
+
+$y = 0;
+do{
+    // echo "This is indexe array by dowhile = index key is ".$y. " and value is ".$colorones[$y]."<br/>";
+    echo "This is indexed array or menual array by while = index key is ".$coloroneskey[$y] ."and value is ".$colorones[$y]."<br/>";
+    $y++;
+}while($y < count($colorones));
+
+echo "<hr/>";
+
+
+echo "<br/>";
+
+$y = 0;
+do{
+    echo "This is indexed array or menual array by while = index key is ".$postkeys[$y] ."and value is ".$posts[$postkeys[$y]]."<br/>";
+    $y++;
+}while($y < count($posts));
+
+echo "<br/>";
+echo "<hr/>";
+
+$g = 0;
+do{
+    $newkey = array_keys($employees[$key[$g]]);
+    $h = 0;
+    do{
+        echo "This is indexed array or menual array by while = index key is ".$newkey[$h] ." and value is ".$employees[$g][$newkey[$h]]."<br/>";
+        $h++;
+    }while($h < count($newkey));
+  
+    $g++;
+}while($g < count($employees));
+
+
 
 ?>
