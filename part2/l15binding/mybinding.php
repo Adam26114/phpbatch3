@@ -59,7 +59,8 @@ class hola3
     }
     public static function getfriend()
     {
-        echo self::friend();
+        // echo self::friend();
+        echo static::friend();
     }
 }
 
@@ -70,6 +71,7 @@ class hola4 extends hola3
         return "My best friend name is " . self::$name . "and Su Su <br/>";
     }
 }
+echo "This is my data binding <br/>";
 
 $obj3 = new hola3();
 echo $obj3::friend(); //My best friend namme is ko ko
